@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Application
+Version=2021.3.2
+
+Name=Idea
+GenericName=Java IDE 
+
+Icon=/usr/share/jetbrains-idea/bin/idea.png
+Comment=IDE for .net development
+Keywords=development;java;kotlin;ide;
+Categories=Development;IDE;
+
+Terminal=false
+StartupNotify=true
+StartupWMClass=jetbrains-idea
+X-MultipleArgs=false
+Exec=/usr/share/jetbrains-idea/bin/idea.sh
+
