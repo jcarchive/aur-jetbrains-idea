@@ -1,7 +1,7 @@
 # Maintainer: Jose C.
 
 pkgname=jetbrains-idea
-pkgver=2021.3.1
+pkgver=2022.1
 pkgrel=1
 pkgdesc="Integrated development environment written in Java for developing computer software"
 arch=('x86_64')
@@ -11,14 +11,16 @@ license=('Commercial')
 provides=('idea')
 conflicts=('idea')
 
-_filename="JetBrains.Idea-${pkgver}.tar.gz"
-_filextract="idea-IU-213.6461.79"
+_filename="ideaIU-$pkgver.tar.gz"
+_filextract="idea-IU-221.5080.210"
 
-source=("https://download.jetbrains.com/idea/ideaIU-2021.3.1.tar.gz"
+source=("https://download.jetbrains.com/idea/ideaIU-$pkgver.tar.gz"
 	"${pkgname}.desktop")
 
-sha256sums=( 'a15b94ea5311b740d08171f0a2fc4d2a60333268082ffb1ae097b47525ce6387'
-	'c30f65f567e5a085fc52e8128928f644a813ec0e436065c16e7b92938ff3a532')
+sha256sums=( 
+  '6ec9623d995e519968edfde73be7b3178bf0e345c86a08cfbfcaef341e7f346e'
+  'a622a9e0f4719317d06e8b02b2d91fb0ad0b4db11ba919deed0571cf1099bb2e'
+)
 
 package() {
 	#Create directories with permission rwxr-xr-x
